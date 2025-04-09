@@ -1,0 +1,10 @@
+   AREA CS058P1,CODE,READONLY
+START
+   MOV R1,#0;  //R1=0
+   MOV R2,#15;  //R2=15
+   MOV R3,#12;  //R3=12
+   MVN R0,R1;   //R0=~R1
+   AND R4,R0,R2; //R4=R0 AND R2
+   EOR R4,R4,R3;  //R4=R4 XOR R3
+   STR R4,[R5]
+   END
